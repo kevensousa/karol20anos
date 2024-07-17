@@ -1,0 +1,256 @@
+/* Tipo de fonte do site */
+@font-face{
+	src:url('../fonts/OpenSans-Light.ttf');
+	font-family: "Open Sans";
+}
+
+/* Proporção do site */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-style: 'Open Sans';
+}
+
+html,body{
+	height: 100%;
+}
+
+/* Limpar */
+.clear{
+	clear: both;
+}
+
+/* Header */
+
+.header{
+	width: 100%;
+	height: 60px;
+	background-color: black;
+ /* 	min-width: 1200px;*/
+	
+}
+
+.header img{
+	margin: 8px;	
+	width: 100px;
+}
+
+/* Menu */
+
+#menu-h ul{
+	list-style: none;
+	padding: 0;
+	width: 100%;
+	text-decoration: none;
+	background-color: purple;
+	/*max-width: 800px;*/
+	text-align: center;
+}
+
+#menu-h ul li{
+	display: inline;
+}
+
+#menu-h ul li a{
+	color: #ffffff;
+	text-decoration: none;
+	padding: 20px;
+	display: inline-block;
+	transition: background .4s;
+
+}
+
+#menu-h ul li a:hover{
+	background-color: white;
+	color: black;
+}
+
+/* Meio */
+
+
+.middle{
+
+    height: 630px;
+	width: 100%;
+	background-image: url('../imagens/bg-1.jpg');
+
+}
+
+section.sessao1{
+	width: 100%;
+	background-color: purple;
+	padding:0 2%;
+	height: 400px;
+}
+
+section.sessao1 .container{
+	max-width: 1000px;
+	height: calc(100% + 30px);
+}
+
+.texto-sessao1{
+	float: left;
+	width: 50%;
+	position: relative;
+	left: 55px;
+	margin-top:60px;
+	padding-left: 80px;
+	color: white;
+
+}
+
+.texto-sessao1 h2{
+	font-size: 26px;
+	font-weight: 300;
+}
+
+.texto-sessao1 p{
+	margin-top:20px;
+	font-size: 20px;
+}
+
+.texto-sessao1 ul{
+	font-size: 20px;
+	list-style-position: outside;
+	padding-left: 15px;
+}
+
+.texto-sessao1 ul li{
+	width: 100%;
+	margin-top:8px;
+}
+
+
+
+.device-sessao1{
+	float: left;
+	width: 50%;
+	position: relative;
+	top: -90px;
+	height: 100%;
+	right: -60px;
+	background-image: url('../imagens/teclado.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/*Comentários*/
+
+.section-1{
+	width: 100%;
+	padding:30px 0;
+	background-color: white;
+	font-size: 20px;
+}
+
+.section-1 h2{
+	text-align: center;
+	color: black;
+	font-weight: normal;
+	
+}
+
+.container-section{
+	margin-top:40px;
+	width: 100%;
+}
+
+.container-section{
+	text-align: center;
+}
+
+.container-single{
+	float: left;
+	width: 50%;
+	text-align: center;	
+	display: inline-block;
+	padding-top: 25px;
+	padding: 40px ;
+}
+
+.container-single p{
+	display: inline-block;
+	text-align: justify;
+	color: black;
+
+}
+
+.container-single img{
+	width:70px;
+}
+
+
+
+
+/* Rodapé */
+
+.footer{
+	border-top:2px solid #525456;
+	padding:20px 0;
+	text-align: center;
+	color: #888;
+	background-color: #090C0E;
+	width: 100%;
+}
+
+.footer p{
+	margin-top:4px;
+	text-align: center;
+	color: white;
+	font-family: 'Open Sans';
+}
+
+
+/* Responsivo */
+
+@media screen and (max-width: 667px) {
+	#menu-h ul{
+		height: 100px;
+		background-color: purple ;
+		padding-top: 15px;
+	}
+
+	#menu-h ul li a{
+		font-size: 30px;
+	}
+
+	.container-single{
+		width: 100%;
+	}
+
+	.device-sessao1{
+		background-image: none;
+	}
+
+	section.sessao1{
+		width: 100%;
+		background-color: purple;
+		padding:0 2%;
+		height: 500px;
+	}
+
+}
+
+@media screen and (max-width: 1024px) {
+	 .device-sessao1{
+		 position:initial;
+		 width: 0px;
+	 }
+	 
+}
+
+
+@media screen and (max-width: 812px){
+	#menu-h ul{
+		height: 100px;
+		background-color: purple ;
+		padding-top: 15px;
+	}
+
+	#menu-h ul li a{
+		font-size: 30px;
+	}
+
+}
